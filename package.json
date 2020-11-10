@@ -1,0 +1,33 @@
+{
+  "name": "webui-api-testing-using-cucumber",
+  "version": "1.0.0",
+  "description": "This project is to show how to test web UI and API using cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run --browser chrome --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmarjeetY"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "Amarjeet Yelwande",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^5.6.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-wait-until": "^1.7.1",
+    "cypress-xpath": "^1.6.1"
+  }
+}
